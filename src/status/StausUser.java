@@ -11,6 +11,7 @@ package status;
  */
 public class StausUser 
 {
+   public enum number{ZERO,ONE,TWO, THREE}; 
    public void statusDetail(String code)
 {
 switch(code.toUpperCase())
@@ -24,6 +25,9 @@ switch(code.toUpperCase())
         break;
         case "THREE": 
             System.out.println("APPROVED");
+        break;
+        case "FOUR": 
+            System.out.println("COMPLETED");
         break;
         default:
          System.out.println("NOT VALID CODE");
